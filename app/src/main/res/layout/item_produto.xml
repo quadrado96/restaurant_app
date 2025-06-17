@@ -12,13 +12,13 @@
         android:layout_marginEnd="12dp"
         android:scaleType="centerCrop"
         android:contentDescription="Imagem do produto"
-        android:src="@drawable/user_line"
+        android:src="@drawable/restaurant_fill"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
         android:id="@+id/tv_nome_produto"
-        android:layout_width="0dp"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Nome do Produto"
         android:textSize="16sp"
@@ -50,18 +50,8 @@
         android:src="@drawable/add_line"
         android:layout_marginTop="15dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintBottom_toTopOf="@id/img_acao_2"
-        app:tint="@color/green" />
-
-    <ImageView
-        android:id="@+id/img_acao_2"
-        android:layout_width="24dp"
-        android:layout_height="24dp"
-        android:contentDescription="Ação 2"
-        android:src="@drawable/subtract_line"
-        android:layout_marginTop="10dp"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
-        android:layout_marginBottom="15dp" />
+        app:tint="@color/green" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -32,7 +32,7 @@ class CardapioFragment : Fragment() {
             Produto("Kibe Recheado", 6.5),
             Produto("Empada de Frango", 6.0),
             Produto("Pastel de Queijo", 5.0),
-            Produto("Risoles de Presunto e Queijo", 5.5),
+            Produto("Risole de Presunto e Queijo", 5.5),
             Produto("Enroladinho de Salsicha", 5.0),
             Produto("Quibe Vegetariano", 6.0),
             Produto("Croquete de Carne", 6.5),
@@ -45,8 +45,7 @@ class CardapioFragment : Fragment() {
             Produto("Torta Salgada de Legumes", 7.0),
             Produto("Refrigerante Lata", 5.0),
             Produto("Suco Natural", 6.0),
-            Produto("Água Mineral", 3.0),
-            Produto("Doce de Leite no Copinho", 4.5)
+            Produto("Água Mineral", 3.0)
         )
 
 

@@ -20,7 +20,6 @@ class ProdutoAdapter(
         val preco: TextView = view.findViewById(R.id.tv_preco_produto)
         val imagem: ImageView = view.findViewById(R.id.img_produto)
         val botaoAdd: ImageView = view.findViewById(R.id.img_acao_1)
-        val botaoSub: ImageView = view.findViewById(R.id.img_acao_2)
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ProdutoViewHolder {
@@ -35,7 +34,6 @@ class ProdutoAdapter(
         holder.preco.text = "R$ %.2f".format(produto.preco)
 
         holder.botaoAdd.setOnClickListener { onAddClick(produto) }
-        holder.botaoSub.setOnClickListener { onRemoveClick(produto) }
     }
 
     override fun getItemCount(): Int = produtos.size

@@ -31,22 +31,29 @@ class RegistroFragment : Fragment() {
 
         // Configurando a RecyclerView
         val listaClientes = listOf(
-            Cliente("João Silva", "17/06/2025 10h00", null),
-            Cliente("Maria Souza", "16/06/2025 09h30", "17/06/2025 11h15"),
-            Cliente("Carlos Lima", "15/06/2025 14h00", null),
-            Cliente("Brunno Quadrado", "17/06/2025 08h45", "17/06/2025 10h30"),
-            Cliente("Ruan Alexandre", "16/06/2025 12h10", null),
-            Cliente("Daniel Jeronimo", "15/06/2025 16h20", "15/06/2025 18h00"),
-            Cliente("Filipe Bárbaro", "14/06/2025 11h00", null),
-            Cliente("Michael Nakamura", "13/06/2025 13h35", "13/06/2025 15h50"),
-            Cliente("Larissa Martins", "17/06/2025 09h00", null),
-            Cliente("Beatriz Lima", "16/06/2025 10h20", "16/06/2025 12h15"),
-            Cliente("Renato Silva", "15/06/2025 17h10", null),
-            Cliente("Tatiane Alves", "14/06/2025 14h00", "14/06/2025 16h40"),
-            Cliente("Fernando Rocha", "13/06/2025 09h30", null),
-            Cliente("Camila Dias", "12/06/2025 15h45", "12/06/2025 18h10"),
-            Cliente("Lucas Mendes", "11/06/2025 13h00", null)
+            Cliente("Amanda Torres", "18/06/2025 08h00", "18/06/2025 09h45"),
+            Cliente("Beatriz Lima", "18/06/2025 10h20", "18/06/2025 12h15"),
+            Cliente("Brunno Quadrado", "18/06/2025 08h45", "18/06/2025 10h30"),
+            Cliente("Camila Dias", "18/06/2025 15h45", "18/06/2025 18h10"),
+            Cliente("Carlos Lima", "18/06/2025 14h00", null),
+            Cliente("Daniel Jeronimo", "18/06/2025 09h15", "18/06/2025 11h00"),
+            Cliente("Eduardo Martins", "18/06/2025 11h30", null),
+            Cliente("Fernando Rocha", "18/06/2025 09h30", null),
+            Cliente("Filipe Bárbaro", "18/06/2025 11h00", null),
+            Cliente("João Silva", "18/06/2025 10h00", null),
+            Cliente("Larissa Martins", "18/06/2025 09h00", null),
+            Cliente("Lucas Mendes", "18/06/2025 13h00", null),
+            Cliente("Maria Souza", "18/06/2025 09h30", "18/06/2025 11h15"),
+            Cliente("Michael Nakamura", "18/06/2025 13h35", "18/06/2025 15h50"),
+            Cliente("Nathalia Ribeiro", "18/06/2025 12h50", "18/06/2025 14h20"),
+            Cliente("Renato Silva", "18/06/2025 17h10", null),
+            Cliente("Roberto Nunes", "18/06/2025 16h10", null),
+            Cliente("Ruan Alexandre", "18/06/2025 12h10", null),
+            Cliente("Tatiane Alves", "18/06/2025 14h00", "18/06/2025 16h40"),
+            Cliente("Vitória Ferreira", "18/06/2025 10h40", null)
         )
+
+
 
 
         val adapter = ClienteAdapter(listaClientes)

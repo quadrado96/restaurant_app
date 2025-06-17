@@ -4,31 +4,48 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.TextView
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
+import androidx.recyclerview.widget.LinearLayoutManager
+import com.quadrado.app_restaurante.Pedido
+import com.quadrado.app_restaurante.PedidoAdapter
+import com.quadrado.app_restaurante.R
 import com.quadrado.app_restaurante.databinding.FragmentPedidoBinding
 
 class PedidoFragment : Fragment() {
 
     private var _binding: FragmentPedidoBinding? = null
-
-    // This property is only valid between onCreateView and
-    // onDestroyView.
     private val binding get() = _binding!!
+
+    private lateinit var pedidoAdapter: PedidoAdapter
 
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        val notificationsViewModel =
-            ViewModelProvider(this).get(PedidoViewModel::class.java)
-
+        val viewModel = ViewModelProvider(this).get(PedidoViewModel::class.java)
         _binding = FragmentPedidoBinding.inflate(inflater, container, false)
-        val root: View = binding.root
 
-        return root
+        setupRecyclerView()
+
+        return binding.root
+    }
+
+    private fun setupRecyclerView() {
+        val listaPedidos = listOf(
+            Pedido("Pastel de Queijo", "R$ 5,00", R.drawable.restaurant_fill),
+            Pedido("Pastel de Queijo", "R$ 5,00", R.drawable.restaurant_fill),
+            Pedido("Esfiha de Carne", "R$ 5,50", R.drawable.restaurant_fill),
+            Pedido("Suco Natural", "R$ 6,00", R.drawable.restaurant_fill),
+            Pedido("Coxinha de Frango", "R$ 6,00", R.drawable.restaurant_fill)
+        )
+
+        pedidoAdapter = PedidoAdapter(listaPedidos)
+        binding.recyclerPedido.apply {
+            layoutManager = LinearLayoutManager(requireContext())
+            adapter = pedidoAdapter
+        }
     }
 
     override fun onDestroyView() {
