@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">app_restaurante</string>
+    <string name="title_qr">QR</string>
+    <string name="title_registro">Registro</string>
+
+    <string name="title_cardapio">Cardápio</string>
+    <string name="title_pedido">Pedido</string>
+</resources>
