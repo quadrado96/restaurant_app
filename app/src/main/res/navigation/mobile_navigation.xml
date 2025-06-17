@@ -12,9 +12,9 @@
         tools:layout="@layout/fragment_home" />
 
     <fragment
-        android:id="@+id/navigation_dashboard"
-        android:name="com.quadrado.app_restaurante.ui.dashboard.DashboardFragment"
+        android:id="@+id/navigation_registro"
+        android:name="com.quadrado.app_restaurante.ui.registro.RegistroFragment"
         android:label="@string/title_registro"
-        tools:layout="@layout/fragment_dashboard" />
+        tools:layout="@layout/fragment_registro" />
 
     </navigation>
